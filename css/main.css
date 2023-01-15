@@ -84,7 +84,7 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Homepage Styles
    ========================================================================== */
 /*****Base Styles*****/
 html {
@@ -280,6 +280,61 @@ footer .content-wrapper {
   padding: 20px 0;
 }
 
+/* ==========================================================================
+   About-page Styles
+   ========================================================================== */
+.mission, .contact-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.mission-content h2 {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.mission-content p {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.contact-section h2 {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.contact-content {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+}
+
+.contact-content h4 {
+  padding: 20px 0;
+}
+
+/* ==========================================================================
+   FAQ-page Styles
+   ========================================================================== */
+.faqs {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.faqs h2 {
+  padding-bottom: 40px;
+}
+
+.questions {
+  padding-bottom: 50px;
+}
+
+.questions h4 {
+  padding: 20px 0;
+}
 
 /* ==========================================================================
    Helper classes
@@ -369,15 +424,12 @@ footer .content-wrapper {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /***Tablet styles***/
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+  /***Desktop styles***/
 }
 
 /* ==========================================================================
