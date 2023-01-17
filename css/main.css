@@ -297,8 +297,12 @@ footer .copyright {
     align-items: center;
     flex-flow: row wrap;
   }
+
+  .contact-content p {
+    margin: 0;
+  }
   
-.mission-content h2 {
+/*.mission-content h2 {
   padding: 20px 0;
 }
 
@@ -308,7 +312,7 @@ footer .copyright {
 
 .contact-section h2 {
   padding: 20px 0;
-}
+}*/
 
 /* ==========================================================================
    FAQ-page Styles
@@ -540,6 +544,41 @@ footer .contact {
 footer .copyright {
   width: 100%;
   text-align: center;
+}
+
+/*****About Page*****/
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.mission-content p {
+  width: 45%;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 80%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/*****FAQ Page*****/
+.faqs .content-wrapper {
+  justify-content: space-between;
+}
+
+.questions {
+  flex-basis: 45%;
+}
+
+.faqs h2 {
+  width: 100%;
 }
 
 }
