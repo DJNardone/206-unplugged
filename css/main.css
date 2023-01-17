@@ -585,6 +585,36 @@ footer .copyright {
 
 @media only screen and (min-width: 1200px) {
   /***Desktop styles***/
+/***Homepage***/
+.content-wrapper {
+  max-width: 960px;
+  margin: 100px 0;
+}
+
+header .content-wrapper {
+  margin: 15px 0;
+}
+
+.features article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  flex-basis: 33%;
+}
+
+.features-items {
+  display: flex;
+}
+
+.features .features-item-description {
+  width: 50%;
+}
+
+.reviews h2 {
+  margin-bottom: 50px;
+}
+
 }
 
 /* ==========================================================================
