@@ -96,9 +96,9 @@ body {
   font-size: 1em;
 }
  
-ul, 
-ol {
- 
+ul, ol {
+  font-size: 1.125em;
+  font-weight: bold;
 }
  
 a {
@@ -106,14 +106,23 @@ a {
   text-decoration: none;
 }
  
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  line-height: 43px;
+  font-weight: 500;
+}
+
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
  
 h3, h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
+  font-weight: 500;
 }
  
 p {
@@ -121,6 +130,11 @@ p {
   line-height: 18px;
 }
  
+h1, h2, h3, h4, p {
+  margin: 0;
+  color: #e2e3ed;
+}
+
 img {
  
 }
@@ -133,15 +147,14 @@ address {
  font-style: normal;
 }
  
-.content-wrapper {
- 
-}
-
 header, footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
+  color: #e2e3ed;
+  text-decoration: none;
 }
 
 .content-wrapper {
@@ -151,10 +164,6 @@ header, footer {
 	justify-content: center;
   align-items: center;
 	flex-flow: row wrap;
-}
-
-h1, h2, h3, h4, p {
-  margin: 0;
 }
 
 .hero-area, .form-description, .features, .reviews {
@@ -187,7 +196,6 @@ header nav ul {
 	justify-content: space-around;
   align-items: center;
 	flex-flow: row wrap;
-
 }
 
 header nav ul li {
@@ -206,7 +214,7 @@ header nav ul li a {
 
 /***Form Section***/
 .form-description {
-
+  background-color: #527158;
 }
 
 .form-description h3 {
@@ -233,6 +241,32 @@ header nav ul li a {
 #send {
   padding: 20px 0;
   margin-top: 20px;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /***Features Section***/
@@ -278,6 +312,7 @@ header nav ul li a {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
@@ -331,6 +366,8 @@ footer .copyright {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
+    padding: 50px 0;
   }
   
   .contact-section {
@@ -338,6 +375,8 @@ footer .copyright {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #2a423a;
+    padding: 50px 0;
   }
 
   .contact-content p {
@@ -363,6 +402,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
   padding-top: 50px;
+  background-color: #527158;
 }
 
 .faqs h2 {
@@ -471,6 +511,34 @@ footer .copyright {
 .content-wrapper {
   max-width: 640px;
   margin: 100px 0;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 48px;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 48px;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 30px;
+}
+
+footer .contact h4 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 24px;
+}
+
+footer p {
+  line-height: 18px;
 }
 
 /*Header*/
@@ -623,11 +691,51 @@ footer .copyright {
   width: 100%;
 }
 
+.faqs h4 {
+  font-size: .875em;
+  line-height: 15.75px;
+}
+
+.faqs p {
+  font-size: .875em;
+  line-height: 15.75px;
+}
+
 }
 
 @media only screen and (min-width: 1200px) {
   /***Desktop styles***/
 /***Homepage***/
+h1 {
+  font-size: 3.75em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.faqs h2 {
+  font-size: 3em;
+}
+
+.mission h2 {
+  font-size: 3em;
+}
+
+h3, h4 {
+  font-size: 1.875em;
+}
+
+.faqs h4 {
+  font-size: 1.125em;
+  line-height: 18px;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 24px;
+}
+
 .content-wrapper {
   max-width: 960px;
   margin: 100px 0;
