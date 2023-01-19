@@ -136,11 +136,11 @@ h1, h2, h3, h4, p {
 }
 
 img {
- 
+ width: 100%;
 }
  
 figure {
- 
+ margin: 0;
 }
  
 address {
@@ -173,20 +173,27 @@ header, footer {
 }
 
 /***Header Section***/
-header {
-  padding: 15px 0;
+header .content-wrapper {
+  margin: 15px 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 10px;
 }
 
 .header-divider {
-  margin: 0;
-  width: 60%;
-  text-align: center;
-  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 header nav {
   width: 60%;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 header nav ul {
@@ -208,6 +215,16 @@ header nav ul li a {
 
 /*****Main Styles*****/
 /***Hero Section***/
+.hero-area {
+background: url('../img/unplugged-retreat.jpg') center no-repeat #222;
+background-size: cover;
+height: 500px;
+}
+
+.hero-area, .content-wrapper {
+  align-items: flex-start;
+}
+
 .hero-area h1 {
   margin: 0;
 }
@@ -243,9 +260,9 @@ header nav ul li a {
   margin-top: 20px;
 }
 
-aside .form {
+/*aside .form {
   margin-top: 30px;
-}
+}*/
  
 input[type=text] {
   box-sizing: border-box;
@@ -289,6 +306,8 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/unplugged-retreat-features.jpg') center no-repeat #222;
+  background-size: cover;
 }
 
 .features h2 {
@@ -544,16 +563,27 @@ footer p {
 /*Header*/
 header {
   justify-content: space-around;
-  padding: 33px 0;
 }
 
 header .content-wrapper {
   width: 100%;
   justify-content: space-between;
+  align-items: center;
+  margin: 33px 0;
+}
+
+header figure {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.header-divider {
+  width: 30%;
 }
 
 header nav {
   width: 20%;
+  margin-top: 0;
 }
 
 header nav ul {
@@ -562,6 +592,9 @@ header nav ul {
 
 /*Main*/
 /***Hero Area***/
+.hero-area {
+  height: 600px;
+}
 
 /***Aside***/
 aside .content-wrapper {
@@ -631,8 +664,26 @@ aside .content-wrapper {
   justify-content: space-between;
 }
 
+.reviews figure {
+  width: 49%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .reviews article div {
   width: 49%;
+}
+
+.reviews h3 {
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+.reviews p {
+  font-size: 1em;
+  line-height: 18px;
 }
 
 /***Footer***/
@@ -761,8 +812,26 @@ header .content-wrapper {
   width: 50%;
 }
 
+.reviews .content-wrapper {
+  justify-content: flex-start;
+}
+
+.reviews article div {
+  width: 42%;
+}
+
 .reviews h2 {
   margin-bottom: 50px;
+}
+
+.reviews p {
+  font-size: 1.125em;
+  line-height: 24px;
+}
+
+/*Hero Area*/
+.hero-area {
+  height: 600px;
 }
 
 }
