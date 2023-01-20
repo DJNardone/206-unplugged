@@ -297,11 +297,11 @@ input[type=button] {
   display: flex;
   justify-content: center;
   text-align: center;
-}
+}*/
 
 .features-item-description {
-  width: 60%;
-}*/
+  text-align: center;
+}
 
 .features {
   display: flex;
@@ -313,6 +313,15 @@ input[type=button] {
 
 .features h2 {
   margin-bottom: 60px;
+}
+
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
+.fontawesome-icon {
+  text-align: center;
 }
 
 .features article {
